@@ -1,0 +1,33 @@
+# enhavo admin page Stored Cross-site Scripting (XSS)
+
+## Summery
+
+[enhavo CMS](https://www.enhavo.com/) has XSS security issue in admin page.
+Authorized attacker can put any kind of javascript. And it is excuted on authorized Victim browser without induce
+
+
+## Reproduction
+
+Here is how to reproduct this issue.
+
+ 1. Access to admin page. 
+ 1. Create an Usergroup as payloads.
+ 1. Back to admin user group page.
+
+Then you find that dialog is appeared and XSS is happen.
+
+
+## Payloads
+
+Set Usergroup as following.
+
+```html
+<img src=x onerror="alert(document.cookie);"/>
+```
+
+## Event
+
+- 2018-03-05 Vuln is discoverd.
+- 2018-03-06 Contact to developers.
+- 2018-03-12 Second Contact
+- 2018-03-20 Full disclosure
