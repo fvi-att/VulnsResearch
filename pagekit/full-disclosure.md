@@ -1,33 +1,21 @@
-# enhavo admin page Stored Cross-site Scripting (XSS)
+# Title{TBD}
+
+I post same full disclosure into [here](https://github.com/pagekit/pagekit/issues/894)
 
 ## Summery
-
-[enhavo CMS](https://www.enhavo.com/) has XSS security issue in admin page.
-Authorized attacker can put any kind of javascript. And it is excuted on authorized Victim browser without induce
+{TBD}
 
 
 ## Reproduction
 
 Here is how to reproduct this issue.
-
- 1. Access to admin page. 
- 1. Create an Usergroup as payloads.
- 1. Back to admin user group page.
-
-Then you find that dialog is appeared and XSS is happen.
+{TBD}
 
 
 ## Payloads
-
-Set Usergroup as following.
-
-```html
-<img src=x onerror="alert(document.cookie);"/>
-```
+{TBD}
 
 ## Event
 
-- 2018-03-05 Vuln is discoverd.
-- 2018-03-06 Contact to developers.
-- 2018-03-12 Second Contact
-- 2018-03-20 Full disclosure
+- 2018-03-08 Vuln is discoverd. 
+- 2018-03-09 post issue on [github](https://github.com/pagekit/pagekit/issues/894)
